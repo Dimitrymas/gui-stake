@@ -1,0 +1,20 @@
+.ChannelsUsernamePopup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 40px;
+    width: 100%;
+    gap: var(--indent);
+}
+
+.ChannelsUsernamePopupInput {
+    height: 39px;
+}
+
+/*сделать деление по 3 символа*/
+
+/*уменьшить размер плейсхолдера*/
+.ChannelsUsernamePopupInput::placeholder {
+    font-size: 16px;
+}

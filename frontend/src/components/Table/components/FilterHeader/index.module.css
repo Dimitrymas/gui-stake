@@ -1,0 +1,53 @@
+.FilterHeader {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-transparent-gray);
+    border-radius: var(--border-radius);
+
+    padding: 0 var(--indent);
+    padding-right: 0;
+
+}
+
+.FilterHeaderNames {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: var(--indent);
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+}
+
+.FilterHeaderNames > div {
+    flex-shrink: 0;
+}
+
+.FilterHeaderName {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgba(var(--color-light-gray-rgb), 0.87);
+    /*margin-left: var(--indent);*/
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.FilterHeaderSettingsIcon {
+    width: 25px;
+    height: 25px;
+    color: rgba(var(--color-light-gray-rgb), 0.87);
+    cursor: pointer;
+}
+
+.FilterHeaderCheckbox {
+    margin-right: 35px;
+}
+

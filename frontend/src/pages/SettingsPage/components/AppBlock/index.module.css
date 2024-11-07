@@ -1,0 +1,17 @@
+.AppBlock {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+
+    background: var(--color-dark-blue);
+
+    border-radius: var(--border-radius);
+
+    padding: var(--indent);
+}
+
+.AppBlockTitle {
+    font-size: 18px;
+    font-weight: 600;
+}

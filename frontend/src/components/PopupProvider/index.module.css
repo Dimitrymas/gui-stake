@@ -1,0 +1,54 @@
+.Popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.PopupShadow {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(5px);
+}
+
+.PopupContentWrapper {
+    background: var(--color-dark-blue);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.25s ease;
+    position: absolute;
+}
+
+.PopupContentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.PopupContent {
+    display: flex;
+    padding: var(--indent);
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.PopupContentHeaderIcon {
+    position: absolute;
+    right: var(--indent);
+    height: 60%;
+    width: auto;
+
+
+    color: rgba(var(--color-light-gray-rgb), 0.8);
+    cursor: pointer;
+}

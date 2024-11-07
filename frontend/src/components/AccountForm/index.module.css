@@ -1,0 +1,127 @@
+
+.AccountForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--indent);
+
+    --font-size: 14px;
+    --height: 33px;
+}
+
+
+.Input, .InputInvalid {
+    width: 100%;
+    height: var(--height);
+    font-size: var(--font-size);
+    padding: 0 80px 0 12px;
+    background: var(--color-black-blue);
+}
+
+.InputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.ProxySettingsRow {
+    display: flex;
+    flex-direction: row;
+    gap: var(--indent);
+    width: 100%;
+}
+
+
+.InputWrapper::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    right: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    font-weight: 600;
+    color: var(--color-light-gray);
+    transition: 0.3s opacity;
+    border-left: 1px solid var(--color-gray);
+}
+
+.TokenRow {
+    display: flex;
+    gap: var(--indent);
+    flex-direction: row;
+    width: 100%;
+}
+
+.TokenButton {
+    background: none !important;
+    height: var(--height);
+    font-size: var(--font-size);
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    text-wrap: nowrap;
+    padding: 0 calc(var(--indent) * 1.5);
+}
+
+.InputInvalid, .InputInvalid:focus {
+    box-shadow: 0 0 0 2px var(--color-red); /* тень вместо бордера при фокусе */
+}
+
+
+.ProxyTypeRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow: 0 0 0 1px var(--color-gray);
+    border-radius: var(--border-radius);
+    height: var(--height);
+    overflow: hidden;
+}
+
+
+.ProxyTypeButtonActive, .ProxyTypeButton {
+    border-right: 1px solid var(--color-gray);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    border-radius: 0;
+    background: none;
+    transition: 0.3s background, 0.3s color, 0.3s opacity;
+    font-weight: 500;
+}
+
+.ProxyTypeButtonActive {
+    background: var(--color-green);
+    color: white;
+}
+
+.ProxyTypeButton:hover {
+    background: rgba(var(--color-light-gray-rgb), 0.15);
+}
+
+.ProxyTypeButton:last-child, .ProxyTypeButtonActive:last-child {
+    border-right: none;
+}
+
+.ProxyRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: var(--indent);
+    background: var(--color-transparent-gray);
+    border-radius: var(--border-radius);
+}
+
+.SubmitButton {
+    width: 100%;
+    background: var(--color-green);
+    height: var(--height);
+    font-size: var(--font-size);
+}
+

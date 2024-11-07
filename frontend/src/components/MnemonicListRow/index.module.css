@@ -1,0 +1,38 @@
+.MnemonicListRow {
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 0 1px var(--color-gray); /* тень вместо бордера */
+    width: 100%;
+    height: 45px;
+    transition: box-shadow 0.2s, transform 0.1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--indent);
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.MnemonicListRow:hover {
+    box-shadow: 0 0 0 1px var(--color-light-gray); /* изменение цвета тени при наведении */
+}
+
+.MnemonicListRow:active {
+    transform: scale(0.98);
+    /*box-shadow: 0 0 0 2px var(--color-green); !* тень вместо бордера при фокусе *!*/
+}
+
+.MnemonicListRowIndex {
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    width: 36px;
+    text-align: left;
+}
+
+.MnemonicListRowValue {
+    font-size: 1.1rem;
+    color: white;
+    width: calc(100% - 36px);
+    text-align: left;
+}

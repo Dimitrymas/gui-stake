@@ -1,0 +1,29 @@
+.InputContainer {
+    position: relative;
+    width: 100%;
+}
+
+.Input {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    padding-left: 44px;
+}
+
+.Input::placeholder {
+    color: var(--color-dark-white);
+}
+
+.InputIcon {
+    position: absolute;
+    top: 10px;
+    color: var(--color-dark-white);
+    left: 14px;
+    font-size: 23px;
+}
+
+.Input:hover .InputIcon {
+    display: none;
+    color: white;
+}

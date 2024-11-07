@@ -1,0 +1,26 @@
+.TabDisabled, .Tab {
+    font-weight: 500;
+    font-size: 15px;
+    height: 100%;
+    border-bottom: solid 3px var(--color-green);
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+    padding-right: 11px;
+    padding-left: 7px;
+    cursor: pointer;
+    transition: border-bottom-color 0.4s;
+
+    user-select: none;
+}
+
+.Tab svg, .TabDisabled svg {
+    color: var(--color-green);
+    font-size: 26px;
+}
+
+.TabDisabled {
+    border-bottom: solid 3px rgba(0, 0, 0, 0);
+}

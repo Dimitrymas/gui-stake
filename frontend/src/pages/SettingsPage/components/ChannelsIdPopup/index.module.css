@@ -1,0 +1,20 @@
+.ChannelsIdPopup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 40px;
+    width: 100%;
+    gap: var(--indent);
+}
+
+.ChannelsIdPopupInput {
+    height: 39px;
+}
+
+/*сделать деление по 3 символа*/
+
+                         /*уменьшить размер плейсхолдера*/
+.ChannelsIdPopupInput::placeholder {
+    font-size: 16px;
+}

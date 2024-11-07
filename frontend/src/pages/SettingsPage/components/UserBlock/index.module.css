@@ -1,0 +1,75 @@
+.UserBlock {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+
+    background: var(--color-dark-blue);
+
+    border-radius: var(--border-radius);
+
+    padding: var(--indent);
+}
+
+.UserBlockTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.UserBlockInfo {
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--indent);
+
+    height: 100%;
+
+    gap: var(--indent);
+}
+
+.UserBlockInfoSub, .UserBlockInfoAccounts {
+    display: flex;
+    flex-direction: column;
+    padding: var(--indent);
+    background: var(--color-transparent-gray);
+    border-radius: var(--border-radius);
+
+    width: 60%;
+}
+
+.UserBlockInfoSubTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.UserBlockInfoSubStatusActive, .UserBlockInfoSubStatusInactive {
+    font-size: 15px;
+    color: var(--color-green);
+}
+
+.UserBlockInfoSubStatusInactive {
+    color: var(--color-red);
+}
+
+.UserBlockInfoAccounts {
+    width: 40%;
+}
+
+.UserBlockInfoAccountsTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.UserBlockInfoAccountsTitle span:nth-child(2) {
+    font-size: 16px;
+    color: var(--color-light-gray);
+    margin-left: 2px;
+}
+
+.UserBlockInfoAccountsTitle span:nth-child(3) {
+    font-size: 14px;
+    color: var(--color-light-gray);
+    margin-left: 1px;
+}
+
+
+

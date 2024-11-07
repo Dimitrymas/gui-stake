@@ -1,0 +1,30 @@
+.ChannelBlock {
+    display: flex;
+    min-width: 600px;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+
+    background: var(--color-dark-blue);
+
+    border-radius: var(--border-radius);
+}
+
+.ChannelBlockHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: var(--indent);
+    padding-bottom: 0;
+}
+
+.ChannelBlockHeaderButtons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--indent);
+}
+
+.ChannelBlockTitle {
+    font-size: 18px;
+    font-weight: 600;
+}

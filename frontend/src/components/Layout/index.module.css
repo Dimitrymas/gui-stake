@@ -1,0 +1,41 @@
+.Layout {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: var(--indent);
+    background-color: var(--color-black-blue);
+}
+
+
+.Content::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.Content::-webkit-scrollbar-thumb {
+    background-color: var(--color-green);
+    border-radius: var(--border-radius);
+}
+
+.Content::-webkit-scrollbar-track {
+    background-color: var(--color-green);
+}
+
+.PageWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.Page {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

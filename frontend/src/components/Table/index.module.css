@@ -1,0 +1,41 @@
+.Table {
+    background-color: var(--color-dark-blue);
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+
+.TableContent {
+    padding: var(--indent);
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 0;
+}
+
+.TableRows {
+    display: flex;
+    flex-direction: column;
+    padding: var(--indent);
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    gap: 2px;
+}
+
+.TableFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--indent);
+    height: 30%;
+    background-color: var(--color-dark-blue);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+

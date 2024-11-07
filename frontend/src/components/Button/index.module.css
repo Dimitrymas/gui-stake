@@ -1,0 +1,57 @@
+.ButtonPrimary {
+    background-color: var(--color-green);
+}
+
+.ButtonSecondary {
+    background: none;
+    border: 1px solid var(--color-gray);
+
+    color: var(--color-dark-white);
+    transition: color 0.34s, background 0.34s ease;
+}
+
+.ButtonPrimary, .ButtonSecondary {
+    gap: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    height: 25px;
+    padding: 20px 12px;
+
+    transition: background 0.4s !important;
+}
+
+.ButtonSecondary:hover {
+    color: white;
+    opacity: 1 !important;
+    background: rgba(var(--color-gray-rgb), 0.12);
+}
+
+.ButtonSecondary:hover .ButtonText {
+    color: white !important;
+}
+
+.ButtonPrimary:hover:not(:disabled) {
+    opacity: 1 !important;
+    background: rgba(var(--color-green-rgb), 0.7);
+}
+
+.ButtonSecondary .ButtonText {
+    color: var(--color-dark-white) !important;
+}
+
+.ButtonText {
+    width: 100%;
+    text-align: center;
+
+    transition: color 0.25s;
+
+    white-space: nowrap;
+}
+
+.ButtonSecondary .ButtonText {
+    color: var(--color-gray);
+}
+
+.ButtonSecondary:hover .ButtonText {
+    color: white;
+}

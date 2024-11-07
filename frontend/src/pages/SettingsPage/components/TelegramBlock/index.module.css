@@ -1,0 +1,76 @@
+.TelegramBlock {
+    display: flex;
+    min-width: 200px;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+
+    background: var(--color-dark-blue);
+
+    border-radius: var(--border-radius);
+
+    padding: var(--indent);
+}
+
+.TelegramBlockTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.TelegramBlockUserInfoText {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    height: 56px;
+}
+
+.TelegramBlockReLogin {
+    gap: 5px;
+    display: flex;
+    user-select: none;
+}
+
+.TelegramBlockReLogin span {
+    font-size: 16px;
+    color: var(--color-light-gray);
+}
+
+.TelegramBlockUserInfoTextUsername {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.TelegramBlockReLoginButton {
+    /*отодвинуть андерлайн от текста*/
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+
+    transition: color 0.3s;
+}
+
+.TelegramBlockReLoginButton:hover {
+    cursor: pointer;
+    color: var(--color-green);
+}
+
+.TelegramBlockUserAvatar {
+    height: 56px;
+    width: auto;
+
+    border-radius: 50%;
+}
+
+.TelegramBlockUserInfo {
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+
+    align-items: center;
+
+    gap: var(--indent);
+
+
+}

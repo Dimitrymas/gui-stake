@@ -1,0 +1,38 @@
+.MnemonicFormRow {
+    padding: 12px var(--indent);
+    outline: none;
+    background: none;
+    box-shadow: 0 0 0 1px var(--color-gray); /* тень вместо бордера */
+    font-size: 1.1rem;
+    width: 100%;
+    border: none;
+    transition: box-shadow 0.4s;
+}
+
+.MnemonicFormRow:hover {
+    box-shadow: 0 0 0 1px var(--color-light-gray); /* изменение цвета тени при наведении */
+}
+
+.MnemonicFormRow:focus {
+    box-shadow: 0 0 0 2px var(--color-green); /* тень вместо бордера при фокусе */
+}
+
+.MnemonicFormRowInvalid {
+    padding: 12px var(--indent);
+    border-radius: 12px;
+    outline: none;
+    background: none;
+    box-shadow: 0 0 0 1px var(--color-red); /* тень вместо бордера */
+    font-size: 1.1rem;
+    width: 100%;
+    border: none;
+    transition: box-shadow 0.4s;
+}
+
+.MnemonicFormRowInvalid:hover {
+    box-shadow: 0 0 0 1px var(--color-light-gray); /* изменение цвета тени при наведении */
+}
+
+.MnemonicFormRowInvalid:focus {
+    box-shadow: 0 0 0 2px var(--color-green); /* тень вместо бордера при фокусе */
+}

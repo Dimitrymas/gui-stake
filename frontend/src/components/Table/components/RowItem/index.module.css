@@ -1,0 +1,35 @@
+
+.RowItem, .RowItemBadStatus, .RowItemGoodStatus, .RowItemNoStatus {
+    color: white;
+    height: 21px;
+    flex-shrink: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.RowItemBadStatus, .RowItemGoodStatus, .RowItemNoStatus {
+    cursor: pointer;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    width: auto;
+
+    padding: 0 var(--indent);
+}
+
+.RowItemBadStatus {
+    border: 1px solid var(--color-red);
+}
+
+.RowItemGoodStatus {
+    border: 1px solid var(--color-green);
+}
+
+.RowItemNoStatus {
+    border: 1px solid var(--color-light-gray);
+}
+

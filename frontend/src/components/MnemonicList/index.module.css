@@ -1,0 +1,54 @@
+.MnemonicList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.MnemonicListColumns {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.MnemonicListColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 50%;
+}
+
+
+
+.MnemonicListSubmitButton {
+    width: 100%;
+    background: var(--color-green);
+    margin: 1rem;
+    border: none;
+
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    height: 2.5rem;
+
+    transition: transform 0.07s, opacity 0.2s, background 0.4s;
+    outline: none;
+}
+
+
+.MnemonicListSubmitButton:hover {
+    opacity: 0.8;
+}
+
+/*#*/
+/*добавить эфект заливки более светлым цветом при клике, плавно заливающимся по обе стороны от места клика*/
+.MnemonicListSubmitButton:active {
+    opacity: 0.7;
+    transform: scale(0.99);
+}

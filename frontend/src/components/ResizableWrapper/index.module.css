@@ -1,0 +1,35 @@
+.ResizableWrapper {
+    position: relative;
+}
+
+.ResizableWrapperBorder {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    height: 100%;
+    width: 30px;
+    cursor: col-resize;
+}
+
+.ResizableWrapperBorder::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    height: 50%;
+    width: 0.1rem;
+    background-color: var(--color-light-gray);
+    opacity: 0;
+
+    transition: background-color, opacity 0.3s;
+}
+
+.ResizableWrapper:hover .ResizableWrapperBorder::after {
+    opacity: 0.4;
+}
+
+.ResizableWrapperBorder:active::after, .ResizableWrapperBorder:hover::after {
+    background-color: white;
+    opacity: 0.7 !important;
+}
+

@@ -1,0 +1,160 @@
+:root {
+    --color-green: #00aa54;
+    --color-red: #fd4741;
+    --color-gray: #3e454e;
+    --color-medium-gray: #333D49;
+    --color-light-gray: #7a879a;
+    --color-black-blue: #161c24;
+    --color-transparent-gray: rgba(var(--color-light-gray-rgb), 0.2);
+    --color-dark-blue: #212b36;
+
+    --color-green-rgb: 0, 170, 84;
+    --color-light-gray-rgb: 122, 135, 154;
+    --color-gray-rgb: 62, 69, 78;
+
+    --border-radius: 10px;
+
+    --indent: 15px;
+
+    --color-dark-white: #909daa;
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--color-black-blue);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box !important;
+
+    font-family: 'Inter', serif !important;
+}
+
+
+div::-webkit-scrollbar {
+    width: 5px;  /* Ширина скролла по Y */
+    height: 5px; /* Высота скролла по X */
+}
+
+/* Стили для трека скроллбара */
+div::-webkit-scrollbar-track {
+    background-color: var(--color-dark-blue);
+    border-radius: 5px;
+}
+
+/* Стили для ползунка скроллбара */
+div::-webkit-scrollbar-thumb {
+    background-color: var(--color-light-gray);
+    border-radius: 5px;
+}
+
+/* Убираем стрелочки */
+div::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+input {
+    padding: 12px var(--indent);
+    border-radius: var(--border-radius);
+    outline: none;
+    background: none;
+    box-shadow: 0 0 0 1px var(--color-gray); /* тень вместо бордера */
+    font-size: 1.1rem;
+    width: 100%;
+    border: none;
+
+    transition: box-shadow 0.4s;
+}
+
+input:hover {
+    box-shadow: 0 0 0 1px var(--color-light-gray); /* изменение цвета тени при наведении */
+}
+
+input:focus {
+    box-shadow: 0 0 0 2px var(--color-green); /* тень вместо бордера при фокусе */
+}
+
+span, p, input, button {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+a {
+    font-weight: 500;
+    color: var(--color-green);
+    text-decoration: inherit;
+
+    transition: opacity 0.34s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    height: 2.5rem;
+
+    transition: transform 0.07s, opacity 0.34s, background 0.34s;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:disabled {
+    background: var(--color-gray);
+}
+
+button:not(:disabled):hover {
+    opacity: 0.8;
+}
+
+button:not(:disabled):active {
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+
+.ant-checkbox-inner {
+    background: none !important;
+    border: 2px solid var(--color-light-gray) !important;
+}
+

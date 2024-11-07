@@ -1,0 +1,28 @@
+.SettingsPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    gap: var(--indent);
+}
+
+.SettingsPageLine {
+    display: flex;
+    max-height: 180px;
+    min-height: 150px;
+    height: 20%;
+
+    gap: var(--indent);
+}
+
+.SettingsPageLine:nth-child(2) {
+    max-height: 700px;
+    height: 55%;
+}
+
+.SettingsPageLine:nth-child(3) {
+    max-height: 200px;
+    min-height: 150px;
+    height: 25%;
+}
