@@ -1,3 +1,9 @@
+## How to use
+
+https://github.com/user-attachments/assets/8eb76ae6-20b1-4c4f-b35c-d11c83ab9417
+
+
+
 ## About
 
 Wails template which includes: Vite, React, TS, TailwindCSS out of the box.
